@@ -8,8 +8,8 @@ an out-of-box keyboard remapping program written in Java
 * download this repo
 * install Interception binary according to instructions on https://github.com/oblitum/Interception
 * install java runtime if you don't have
-* edit remap.conf with any text editor like [neoeedit|https://github.com/neoedmund/neoeedit]
-* run remap.cmd in windows command line
+* edit `remap.conf` with any text editor like [neoeedit|https://github.com/neoedmund/neoeedit]
+* run `remap.cmd` in windows command line
 * enjoy
 * to stop remapping, just close the program
 
