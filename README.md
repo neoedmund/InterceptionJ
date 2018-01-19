@@ -4,7 +4,7 @@ A java wrapper for Interception[https://github.com/oblitum/Interception]
 and 
 an out-of-box keyboard remapping program written in Java
 
-# how t use
+# how to use
 * download this repo
 * install Interception binary according to instructions on https://github.com/oblitum/Interception
 * install java runtime if you don't have
@@ -13,3 +13,4 @@ an out-of-box keyboard remapping program written in Java
 * enjoy
 * to stop remapping, just close the program
 
+![mod](https://github.com/neoedmund/InterceptionJ/raw/master/dvorak_and_qwerty.jpg)
