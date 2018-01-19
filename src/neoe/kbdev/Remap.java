@@ -18,7 +18,7 @@ public class Remap {
 
 	public static void main(String[] args) throws Exception {
 
-		Map keyMap = loadKeyMap();
+		Map keyMap = loadKeyMap(args[0]);
 		System.out.println("load config:" + keyMap);
 		U.raise_process_priority();
 
@@ -61,10 +61,10 @@ public class Remap {
 		return Short.parseShort(v.toString());
 	}
 
-	private static Map loadKeyMap() throws Exception {
+	private static Map loadKeyMap(String fn) throws Exception {
 		// key are all string type
 		Map ret = new HashMap();
-		Map m = (Map) PyData.parseAll(FileUtil.readString(new FileInputStream("remap.conf"), null));
+		Map m = (Map) PyData.parseAll(FileUtil.readString(new FileInputStream(fn), null));
 		Map m2 = (Map) m.get("device");
 		for (Object key : m2.keySet()) {
 			ret.put(toStr2(key), normalizeMap((Map) m2.get(key)));
