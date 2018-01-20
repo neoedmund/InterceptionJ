@@ -5,6 +5,6 @@ destDir:"dist"
 debug:false	target:8	source:8
 */
 prjs:[
-[InterceptionJ, "." , {   dep:[ ]  cp:[ "e:\neoe\oss\lab\lab2\libs\jna.jar"] }]
+[InterceptionJ, "." , {   dep:[ ]  cp:[ "/neoe/oss/lab/lab2/libs/jna.jar"] }]
 ]
 }

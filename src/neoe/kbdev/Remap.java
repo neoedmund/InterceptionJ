@@ -32,8 +32,7 @@ public class Remap {
 		};
 		Pointer context = lib.interception_create_context();
 		InterceptionKeyStroke stroke = new InterceptionKeyStroke();
-		lib.interception_set_filter(context, cb1, (short) (InterceptionFilterKeyState.INTERCEPTION_FILTER_KEY_DOWN
-				| InterceptionFilterKeyState.INTERCEPTION_FILTER_KEY_UP));
+		lib.interception_set_filter(context, cb1, (short) (InterceptionFilterKeyState.INTERCEPTION_FILTER_KEY_ALL));
 		int device;
 		while (lib.interception_receive(context, device = lib.interception_wait(context), stroke, 1) > 0) {
 			System.out.printf("device:%d code:%d(0x%h)\n", device, stroke.code, stroke.code);
